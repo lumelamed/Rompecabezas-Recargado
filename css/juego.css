@@ -1,0 +1,116 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+
+/*PALETA DE COLORES: Travel The World Color Palette*/
+/*Cambie de la paleta '#c9a37c' por '#f4ece4'*/
+
+body {
+  font-family: Candara;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/BackgroundImage.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: -5px;
+}
+li {
+  padding: 5px 0;
+  text-align: justify;
+}
+li::before {
+  content: "• ";
+  color: rgb(123,187,255);
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #f4ece4;
+  padding: 30px;
+  color: #000;
+}
+
+.col-60{
+  background-color: #f4ece4;
+}
+
+#titulo h1{
+  background-color: rgb(158,212,84);
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.subtitulos h2{
+  color: rgb(123,187,255);
+  border-bottom: 1px solid rgb(123,187,255);
+  text-align: center;
+  margin-top: 30px;
+}
+
+#cantidadPiezasPorLado{
+  margin-top: -5px;
+  width:25%;
+  float: right;
+  background-color:inherit;
+  text-align: center;
+  font-family: Candara;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#mezclar{
+  background-color: rgb(158,212,84);
+  font-family: Candara;
+  color: white;
+  font-size: 20px;
+  margin-left: 35%;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  border-style: none;
+  border-radius: 4px;
+}
+
+#movimientos h2{
+  width:70%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 27px;
+  float:left;
+  font-weight: bold;
+  color: rgb(123,187,255);
+}
+
+#contadorDeMovimientos{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.pie{
+  margin-top: -18px;
+  background-color: rgb(92,85,225);
+}
+
+.pie p{
+  padding:5px;
+  color: #FFF;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
